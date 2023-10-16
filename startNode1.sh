@@ -1,0 +1,3 @@
+#!/bin/sh
+
+geth --datadir node1 --syncmode 'full' --port 30312 --http --http.addr '0.0.0.0' --http.corsdomain "*" --http.port 8503 --http.api 'personal,eth,net,web3,txpool,miner' --bootnodes 'enode://ea2cab82d19b0704299ff837c9e10ee90841d24503e2f6d993fafbf351d9b6a1860cb6f20eee0f35412c4c28ca68c0720f623792f24abdf2ad0d386598a5b4e2@127.0.0.1:30310' --networkid 1515 --gpo.maxprice '1' --allow-insecure-unlock -unlock f59a61caf69f7216b83f063c2b9b712b82e50e84 --password node1/password.txt --authrpc.port 8552
