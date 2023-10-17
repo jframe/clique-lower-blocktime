@@ -26,7 +26,7 @@ Previous scenario shows that if block time configuration on node1 is shorter tha
 node1 will fail to sync. Block time change may be smoother if on node 1 we'll set period low enough, or even lowest 
 value, 1 second
 1. Initialise the genesis of node1 to the lower blocktime using `geth --datadir node1 init genesis-low-block.json`
-2. Initialise the genesis of validator1 to the lower blocktime using `geth --datadir validator1 init genesis.json`
+2. Initialise the genesis of validator1 using `geth --datadir validator1 init genesis.json`
 3. Run bootnode using `./startBootnode.sh` in a seperate terminal
 4. Run validator in a seperate terminal using `./startValidator1.sh`
 5. Run non-validator node in a seperate terminal using `./startNode1.sh`
