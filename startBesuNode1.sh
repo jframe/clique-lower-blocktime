@@ -1,0 +1,3 @@
+#!/bin/sh
+
+besu --logging=INFO --rpc-http-enabled --rpc-http-api=ETH,NET,WEB3,ADMIN --rpc-http-host=0.0.0.0 --rpc-http-cors-origins="all" --p2p-port=30304 --data-path=besuNode1 --genesis-file=genesis.json --miner-enabled=true --miner-coinbase=fe7c3900767b1cf686deb914b243d454aeb2e1a1 --bootnodes 'enode://3a487ab2faf955ba458ef75f0cc01125b4eb4e964c6f17d07ab72bacd80f3a14ade20b24d7a91f8b26f889b2e651525b469f1797726874746284af5bc472c7af@127.0.0.1:30311'
